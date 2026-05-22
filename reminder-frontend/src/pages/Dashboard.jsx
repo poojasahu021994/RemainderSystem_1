@@ -25,7 +25,7 @@ export default function Dashboard() {
     const fetchReminders = async () => {
         try {
             const res = await axios.get(
-                "https://remainderssystem.onrender.com/api/reminders/",
+                "https://remainderssystem-1.onrender.com/api/reminders/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -47,7 +47,7 @@ export default function Dashboard() {
         const interval = setInterval(async () => {
             try {
                 const res = await axios.get(
-                    "https://remainderssystem.onrender.com/api/reminders/notifications/",
+                    "https://remainderssystem-1.onrender.com/api/reminders/notifications/",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -82,7 +82,7 @@ export default function Dashboard() {
     const handleCreateReminder = async () => {
         try {
             await axios.post(
-                "https://remainderssystem.onrender.com/api/reminders/",
+                "https://remainderssystem-1.onrender.com/api/reminders/",
                 {
                     title,
                     reminder_time: datetime,
@@ -110,7 +110,7 @@ export default function Dashboard() {
     const handleUpdateReminder = async () => {
         try {
             await axios.put(
-                `https://remainderssystem.onrender.com/api/reminders/${editingId}/`,
+                `https://remainderssystem-1.onrender.com/api/reminders/${editingId}/`,
                 {
                     title,
                     reminder_time: datetime,
@@ -139,7 +139,7 @@ export default function Dashboard() {
     const handleDelete = async (id) => {
         try {
             await axios.delete(
-                `https://remainderssystem.onrender.com/api/reminders/${id}/`,
+                `https://remainderssystem-1.onrender.com/api/reminders/${id}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
