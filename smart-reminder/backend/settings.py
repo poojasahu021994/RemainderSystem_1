@@ -42,8 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-'rest_framework_simplejwt',
-'users', 'reminders','corsheaders',
+    'rest_framework_simplejwt',
+    'users', 
+    'reminders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -159,8 +161,13 @@ SIMPLE_JWT = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://remainder-system-6ftl3offi-poojasahu021994s-projects.vercel.app"
+    "https://smart-remainder-system.vercel.app"
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://smart-remainder-system.vercel.app",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = [
