@@ -47,7 +47,7 @@ export default function Dashboard() {
         const interval = setInterval(async () => {
             try {
                 const res = await axios.get(
-                    "https://remainderssystem-1.onrender.com/api/reminders/notifications/",
+                    "https://remaindersystem-1.onrender.com/api/reminders/notifications/",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
