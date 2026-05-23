@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'users', 
     'reminders',
-    'corsheaders',
+    
 ]
 
 MIDDLEWARE = [
@@ -158,17 +159,17 @@ SIMPLE_JWT = {
     
 # }
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://smart-remainder-system.vercel.app"
+    "remainder-system-1-j3m6-h2jv6psf3-poojasahu021994s-projects.vercel.app"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://smart-remainder-system.vercel.app",
+    "remainder-system-1-j3m6-h2jv6psf3-poojasahu021994s-projects.vercel.app",
 ]
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = [
     "content-type",
