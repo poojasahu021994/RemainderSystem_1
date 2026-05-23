@@ -162,11 +162,11 @@ SIMPLE_JWT = {
 # CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "remainder-system-1-j3m6-h2jv6psf3-poojasahu021994s-projects.vercel.app"
+    "remainder-system-1-6ipcvbpau-poojasahu021994s-projects.vercel.app"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "remainder-system-1-j3m6-h2jv6psf3-poojasahu021994s-projects.vercel.app",
+    "remainder-system-1-6ipcvbpau-poojasahu021994s-projects.vercel.app",
 ]
 
 # CORS_ALLOW_CREDENTIALS = True
