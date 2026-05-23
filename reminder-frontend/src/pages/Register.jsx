@@ -22,7 +22,7 @@ return
 try{
 
 await axios.post(
-"https://remainderssystem.onrender.com/api/register/",
+"https://remaindersystem-1.onrender.com/api/register/",
 {
 name,
 username,

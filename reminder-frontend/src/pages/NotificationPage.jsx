@@ -19,7 +19,7 @@ function NotificationPage() {
 
       try {
         const res = await axios.get(
-          "https://remainderssystem.onrender.com/api/reminders/notifications/",
+          "https://remaindersystem-1.onrender.com/api/reminders/notifications/",
           {
             headers: {
               Authorization: `Bearer ${token}`

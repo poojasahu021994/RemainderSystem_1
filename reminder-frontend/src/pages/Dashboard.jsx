@@ -82,7 +82,7 @@ export default function Dashboard() {
     const handleCreateReminder = async () => {
         try {
             await axios.post(
-                "https://remainderssystem-1.onrender.com/api/reminders/",
+                "https://remaindersystem-1.onrender.com/api/reminders/",
                 {
                     title,
                     reminder_time: datetime,
@@ -110,7 +110,7 @@ export default function Dashboard() {
     const handleUpdateReminder = async () => {
         try {
             await axios.put(
-                `https://remainderssystem-1.onrender.com/api/reminders/${editingId}/`,
+                `https://remaindersystem-1.onrender.com/api/reminders/${editingId}/`,
                 {
                     title,
                     reminder_time: datetime,
@@ -139,7 +139,7 @@ export default function Dashboard() {
     const handleDelete = async (id) => {
         try {
             await axios.delete(
-                `https://remainderssystem-1.onrender.com/api/reminders/${id}/`,
+                `https://remaindersystem-1.onrender.com/api/reminders/${id}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
